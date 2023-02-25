@@ -1,6 +1,6 @@
 import re
 
-with open('playerPasmo.asm', 'r') as fdPasmo, open('playerZ88dk.asm', 'w+') as fdZ88dk:
+with open('./player/playerPasmo.asm', 'r') as fdPasmo, open('./player/playerZ88dk.asm', 'w+') as fdZ88dk:
         lineas = fdPasmo.readlines()
         fdZ88dk.write("SECTION code_user\n\n")
 
