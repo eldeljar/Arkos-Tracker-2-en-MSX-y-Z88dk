@@ -41,12 +41,12 @@ void main (void) {
   ply_akg_init(SONG, 0 );
   
   while ( 1 ) {
-    (*(uint8_t *)0x4000)++;
+    /*(*(uint8_t *)0x4000)++;
         
-    intrinsic_di();
+    intrinsic_di();*/
     ply_akg_play();
-    intrinsic_ei();
-    intrinsic_halt();
+    /*intrinsic_ei();
+    intrinsic_halt();*/
 
   }
 }
