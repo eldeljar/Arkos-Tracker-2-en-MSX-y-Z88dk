@@ -12,10 +12,10 @@ Incluye la música, el player y los parámetros del player para MSX.
 
 Script para generar el fichero ASM del player y la música compatible con Z88dk para que sea compilado posteriormente al generar la Rom.
 
-# 4. PlayerAkg.asm y PlayerAkg_SoundEffects.asm
+## 4. PlayerAkg.asm y PlayerAkg_SoundEffects.asm
 
 El player de Arkos Tracker 2
 
-# 5. playerZ88dk.asm
+## 5. playerZ88dk.asm
 
 Es el fichero generado por el script. Contiente el código en ASM del player y la música compatible con Z88dk.
