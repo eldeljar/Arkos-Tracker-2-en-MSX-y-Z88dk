@@ -7,8 +7,6 @@ Arquitectura: MSX
 
 Lenguaje de programación: C, ASM
 
-mail: jcabtos@gmail.com
-
 ## 1. Introducción
 
 Ejemplo de generar una rom de MSX que incluye Arkos Tracker 2 para la música.
