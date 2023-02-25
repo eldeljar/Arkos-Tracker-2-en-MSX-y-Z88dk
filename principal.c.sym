@@ -1,5 +1,0 @@
-i_2                             = $0037 ; addr, local, , , code_compiler, principal.c::main::0::3:39
-i_3                             = $003D ; addr, local, , , code_compiler, principal.c::main::0::3:39
-_playmusic                      = $0000 ; addr, global, , , code_compiler, principal.c::playmusic::0::0:19
-_setup_int                      = $0020 ; addr, global, , , code_compiler, principal.c::setup_int::0::1:26
-_main                           = $002C ; addr, global, , , code_compiler, principal.c::main::0::3:39
