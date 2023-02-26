@@ -10,10 +10,10 @@
     ;include "SoundEffects.asm" 
     ;include "SoundEffects_playerconfig.asm"  ;Optional.
 
-    PLY_AKM_HARDWARE_MSX = 1
-    PLY_AKM_MANAGE_SOUND_EFFECTS = 1
-    PLY_AKM_Rom = 1
-    PLY_AKM_ROM_Buffer = #c000
+    PLY_AKG_HARDWARE_MSX = 1
+    PLY_AKG_MANAGE_SOUND_EFFECTS = 1
+    PLY_AKG_ROM = 1
+    PLY_AKG_ROM_Buffer = #c000
 
 
     ;This is the player.
