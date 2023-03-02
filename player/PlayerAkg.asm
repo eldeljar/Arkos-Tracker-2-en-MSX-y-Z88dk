@@ -38,7 +38,7 @@
 ;       Sound effects:
 ;       --------------
 ;       Sound effects are disabled by default. Declare PLY_AKG_MANAGE_SOUND_EFFECTS to enable it:
-       PLY_AKG_MANAGE_SOUND_EFFECTS = 1
+;       PLY_AKG_MANAGE_SOUND_EFFECTS = 1
 ;       Check the sound effect tester to see how it enables it.
 ;       Note that the PRESENCE of this variable is tested, NOT its value.
 
