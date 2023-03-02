@@ -10,9 +10,9 @@
 #endif
 
 // Arkos C prototypes
-void ply_akg_init( void *song, unsigned int subsong ) __z88dk_callee;
-void ply_akg_play( void );
-void ply_akg_stop( void );
+extern void ply_akg_init( void *song, unsigned int subsong ) __z88dk_callee;
+extern void ply_akg_play( void );
+extern void ply_akg_stop( void );
 
 extern int SONG[];
 
@@ -40,12 +40,18 @@ void main (void) {
 
   ply_akg_init(SONG, 0 );
   
+  printf("Before\n");
+
+  setup_int();
+
+  printf("After\n");
+   
   while ( 1 ) {
     /*(*(uint8_t *)0x4000)++;
         
-    intrinsic_di();*/
+    intrinsic_di();
     ply_akg_play();
-    /*intrinsic_ei();
+    intrinsic_ei();
     intrinsic_halt();*/
 
   }
