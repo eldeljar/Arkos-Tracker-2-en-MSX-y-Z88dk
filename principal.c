@@ -47,12 +47,6 @@ void main (void) {
 
   printf("After\n");*/
   
-  printf("Before\n");
-
-  //setup_int();
-
-  printf("After\n");
-   
   while ( 1 ) {
      printf(".");
      intrinsic_di();
@@ -60,17 +54,6 @@ void main (void) {
      intrinsic_ei();
      printf("/");
      intrinsic_halt();
-
-    //setup_int();
-
-    /*printf("Hola\n");
-
-    intrinsic_di();
-    ply_akm_play();
-    intrinsic_ei();
-    intrinsic_halt();
-
-    printf("Adios\n");*/
 
   }
 }
