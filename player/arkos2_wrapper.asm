@@ -2,7 +2,7 @@
 ;; C stubs for Arkos invocation from zcc
 ;;
 
-section code_user
+section data_user
 
 ;; public C symbols
 PUBLIC _ply_akg_init
@@ -21,11 +21,12 @@ EXTERN _SONG
 ;;   (params pushed on the stack right to left, all 16-bit)
 ;;
 _ply_akg_init:
-  pop bc    ; BC = retaddr
-  pop hl    ; HL = song address
-  pop af    ; A = subsong number
-  push bc   ; restore retaddr
-  jp PLY_AKG_INIT
+   pop bc    ; BC = retaddr
+   pop de    ; E = subsong number
+   pop hl    ; HL = song address
+   push bc   ; restore retaddr
+   ld   a,e
+   jp PLY_AKG_INIT
 
 ;;
 ;; void ply_akg_play( void );

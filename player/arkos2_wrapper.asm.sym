@@ -1,0 +1,3 @@
+_ply_akg_init                   = $0000 ; addr, public, , , data_user, .\player\arkos2_wrapper.asm:23
+_ply_akg_play                   = $0008 ; addr, public, , , data_user, .\player\arkos2_wrapper.asm:34
+_ply_akg_stop                   = $000B ; addr, public, , , data_user, .\player\arkos2_wrapper.asm:40

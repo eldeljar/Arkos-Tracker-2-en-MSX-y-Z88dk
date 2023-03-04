@@ -42,17 +42,19 @@ void main (void) {
   
   printf("Before\n");
 
-  setup_int();
+  //setup_int();
 
   printf("After\n");
    
   while ( 1 ) {
-    /*(*(uint8_t *)0x4000)++;
+    //(*(uint8_t *)0x4000)++;
         
-    intrinsic_di();*/
+    printf(".");
+    intrinsic_di();
     ply_akg_play();
     intrinsic_ei();
-    intrinsic_halt();*/
+    printf("/");
+    intrinsic_halt();
 
   }
 }
