@@ -4,11 +4,11 @@ with open('./player/playerPasmo.asm', 'r') as fdPasmo, open('./player/playerZ88d
         lineas = fdPasmo.readlines()
         fdZ88dk.write("SECTION data_user\n\n")
 
-        fdZ88dk.write("PUBLIC PLY_AKG_INIT\n");
-        fdZ88dk.write("PUBLIC PLY_AKG_PLAY\n");
-        fdZ88dk.write("PUBLIC PLY_AKG_STOP\n");
-        fdZ88dk.write("PUBLIC PLY_AKG_INITSOUNDEFFECTS\n");
-        fdZ88dk.write("PUBLIC PLY_AKG_PLAYSOUNDEFFECT\n");
+        fdZ88dk.write("PUBLIC PLY_AKM_INIT\n");
+        fdZ88dk.write("PUBLIC PLY_AKM_PLAY\n");
+        fdZ88dk.write("PUBLIC PLY_AKM_STOP\n");
+        fdZ88dk.write("PUBLIC PLY_AKM_INITSOUNDEFFECTS\n");
+        fdZ88dk.write("PUBLIC PLY_AKM_PLAYSOUNDEFFECT\n");
         fdZ88dk.write("PUBLIC _SONG\n");
         fdZ88dk.write("\n\n");
 
