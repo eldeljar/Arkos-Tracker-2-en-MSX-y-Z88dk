@@ -2,7 +2,7 @@
 ;; C stubs for Arkos invocation from zcc
 ;;
 
-section code_user
+section data_user
 
 ;; public C symbols
 PUBLIC _ply_akm_init
@@ -22,9 +22,10 @@ EXTERN _SONG
 ;;
 _ply_akm_init:
   pop bc    ; BC = retaddr
+  pop de    ; E = subsong number
   pop hl    ; HL = song address
-  pop af    ; A = subsong number
   push bc   ; restore retaddr
+  ld   a,e
   jp PLY_AKM_INIT
 
 ;;

@@ -10,11 +10,12 @@
 #endif
 
 // Arkos C prototypes
-void ply_akm_init( void *song, unsigned int subsong ) __z88dk_callee;
-void ply_akm_play( void );
-void ply_akm_stop( void );
+extern void ply_akm_init( void *song, unsigned int subsong ) __z88dk_callee;
+extern void ply_akm_play( void );
+extern void ply_akm_stop( void );
 
 extern int SONG[];
+
 
 void playmusic(void) {
    M_PRESERVE_ALL;
@@ -40,17 +41,30 @@ void main (void) {
 
   ply_akm_init(SONG, 0 );
 
+  printf("Before\n");
+
   setup_int();
+
+  printf("After\n");
   
   while ( 1 ) {
-    /*(*(uint8_t *)0x4000)++;
-        
-    intrinsic_di();*/
-    //ply_akm_play();
-    /*intrinsic_ei();
-    intrinsic_halt();*/
+     /*printf(".");
+     intrinsic_di();
+     ply_akm_play();
+     intrinsic_ei();
+     printf("/");
+     intrinsic_halt();*/
 
     //setup_int();
+
+    /*printf("Hola\n");
+
+    intrinsic_di();
+    ply_akm_play();
+    intrinsic_ei();
+    intrinsic_halt();
+
+    printf("Adios\n");*/
 
   }
 }

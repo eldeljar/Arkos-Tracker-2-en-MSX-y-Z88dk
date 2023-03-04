@@ -2,7 +2,7 @@ import re
 
 with open('./player/playerPasmo.asm', 'r') as fdPasmo, open('./player/playerZ88dk.asm', 'w+') as fdZ88dk:
         lineas = fdPasmo.readlines()
-        fdZ88dk.write("SECTION code_user\n\n")
+        fdZ88dk.write("SECTION data_user\n\n")
 
         fdZ88dk.write("PUBLIC PLY_AKM_INIT\n");
         fdZ88dk.write("PUBLIC PLY_AKM_PLAY\n");
