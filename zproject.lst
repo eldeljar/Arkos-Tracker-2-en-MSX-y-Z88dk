@@ -1,3 +1,4 @@
-.\player\playerZ88dk.asm
-.\player\arkos2_wrapper.asm
+./player/playerZ88dk.asm
+./player/arkos2_wrapper.asm
+./player/song.asm
 principal.c

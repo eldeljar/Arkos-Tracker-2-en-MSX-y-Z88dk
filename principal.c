@@ -41,19 +41,13 @@ void main (void) {
 
   ply_akm_init(SONG, 0 );
 
-  /*printf("Before\n");
+  printf("Before\n");
 
   setup_int();
 
-  printf("After\n");*/
+  printf("After\n");
   
   while ( 1 ) {
-     printf(".");
-     intrinsic_di();
-     ply_akm_play();
-     intrinsic_ei();
-     printf("/");
-     intrinsic_halt();
-
+     fgetc_cons();
   }
 }
